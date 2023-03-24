@@ -66,7 +66,6 @@ const editing =ref(false);
         </template>
     </Dropdown>
             </div>
-                <p class="mt-4 text-lg text-gray-900">{{ chirp.message }}</p>
                 <form v-if="editing" @submit.prevent=
                     "form.put(route('chirps.update', chirp.id), 
                     { onSuccess: () => editing = false })">
